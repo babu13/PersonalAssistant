@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/alarm"
+            android:title="Alarm" />
+        <item
+            android:id="@+id/nav_routine"
+            android:icon="@drawable/routine"
+            android:title="Routine" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/events"
+            android:title="Events" />
+        <item
+            android:id="@+id/nav_callblock"
+            android:icon="@drawable/callbloc"
+            android:title="Call Block" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+
+        </menu>
+    </item>
+
+</menu>

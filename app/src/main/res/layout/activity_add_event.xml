@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context="combo.parvez.kamal.sakib.personalassistant.Reminder.AddEventActivity">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageCalender"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/calender"
+        android:scaleType="fitXY"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/setdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:hint="  Set Date             "
+        android:layout_alignTop="@+id/imageCalender"
+        android:layout_toRightOf="@+id/imageCalender"
+        android:layout_toEndOf="@+id/imageCalender"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageClock"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/clock1"
+        android:scaleType="fitXY"
+        android:layout_below="@+id/imageCalender"
+        android:layout_alignLeft="@+id/imageCalender"
+        android:layout_alignStart="@+id/imageCalender"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/setTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:hint="  Set Time             "
+        android:layout_alignBottom="@+id/imageClock"
+        android:layout_toRightOf="@+id/imageClock"
+        android:layout_toEndOf="@+id/imageClock" />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:text="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/imageClock"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:hint="Write something" />
+</RelativeLayout>
+
+<LinearLayout
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:text="Save" />
+</LinearLayout>
+
+</LinearLayout>
